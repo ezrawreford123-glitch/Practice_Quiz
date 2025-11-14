@@ -78,16 +78,17 @@
             // 
             // question01Button
             // 
-            this.question01Button.Location = new System.Drawing.Point(5, 147);
+            this.question01Button.Location = new System.Drawing.Point(5, 164);
             this.question01Button.Name = "question01Button";
             this.question01Button.Size = new System.Drawing.Size(119, 35);
             this.question01Button.TabIndex = 3;
             this.question01Button.Text = "Question 01";
             this.question01Button.UseVisualStyleBackColor = true;
+            this.question01Button.Click += new System.EventHandler(this.question01Button_Click);
             // 
             // question1OutputLabel
             // 
-            this.question1OutputLabel.Location = new System.Drawing.Point(1, 185);
+            this.question1OutputLabel.Location = new System.Drawing.Point(1, 207);
             this.question1OutputLabel.Name = "question1OutputLabel";
             this.question1OutputLabel.Size = new System.Drawing.Size(247, 47);
             this.question1OutputLabel.TabIndex = 4;
@@ -112,23 +113,25 @@
             // 
             // question2Button
             // 
-            this.question2Button.Location = new System.Drawing.Point(5, 417);
+            this.question2Button.Location = new System.Drawing.Point(5, 439);
             this.question2Button.Name = "question2Button";
             this.question2Button.Size = new System.Drawing.Size(119, 35);
             this.question2Button.TabIndex = 7;
             this.question2Button.Text = "Question 02";
             this.question2Button.UseVisualStyleBackColor = true;
+            this.question2Button.Click += new System.EventHandler(this.question2Button_Click);
             // 
             // question2TextBox
             // 
-            this.question2TextBox.Location = new System.Drawing.Point(5, 385);
+            this.question2TextBox.Location = new System.Drawing.Point(5, 404);
             this.question2TextBox.Name = "question2TextBox";
-            this.question2TextBox.Size = new System.Drawing.Size(286, 26);
+            this.question2TextBox.Size = new System.Drawing.Size(286, 31);
             this.question2TextBox.TabIndex = 8;
+            this.question2TextBox.TextChanged += new System.EventHandler(this.question2TextBox_TextChanged);
             // 
             // question2OutputLabel
             // 
-            this.question2OutputLabel.Location = new System.Drawing.Point(1, 455);
+            this.question2OutputLabel.Location = new System.Drawing.Point(1, 477);
             this.question2OutputLabel.Name = "question2OutputLabel";
             this.question2OutputLabel.Size = new System.Drawing.Size(319, 47);
             this.question2OutputLabel.TabIndex = 9;
@@ -159,20 +162,22 @@
             this.question3Button.TabIndex = 12;
             this.question3Button.Text = "Question 03";
             this.question3Button.UseVisualStyleBackColor = true;
+            this.question3Button.Click += new System.EventHandler(this.question3Button_Click);
             // 
             // q3Int1Text
             // 
             this.q3Int1Text.Location = new System.Drawing.Point(479, 281);
             this.q3Int1Text.Name = "q3Int1Text";
-            this.q3Int1Text.Size = new System.Drawing.Size(100, 26);
+            this.q3Int1Text.Size = new System.Drawing.Size(100, 31);
             this.q3Int1Text.TabIndex = 13;
             // 
             // q3int2Text
             // 
             this.q3int2Text.Location = new System.Drawing.Point(638, 281);
             this.q3int2Text.Name = "q3int2Text";
-            this.q3int2Text.Size = new System.Drawing.Size(100, 26);
+            this.q3int2Text.Size = new System.Drawing.Size(100, 31);
             this.q3int2Text.TabIndex = 14;
+            this.q3int2Text.TextChanged += new System.EventHandler(this.q3int2Text_TextChanged);
             // 
             // question3OutputLabel
             // 
@@ -203,7 +208,7 @@
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(267, 477);
+            this.label10.Location = new System.Drawing.Point(260, 477);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(222, 75);
             this.label10.TabIndex = 18;
@@ -211,7 +216,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.label10);
